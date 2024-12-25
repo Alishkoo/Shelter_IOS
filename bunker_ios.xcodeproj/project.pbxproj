@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1277FA442D1C0EC700B88E5F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA432D1C0EC700B88E5F /* Player.swift */; };
+		1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA452D1C0F1D00B88E5F /* Lobby.swift */; };
+		1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */; };
+		1277FA4B2D1C118300B88E5F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA4A2D1C118300B88E5F /* APIService.swift */; };
+		1277FA4E2D1C123300B88E5F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1277FA4D2D1C123300B88E5F /* Alamofire */; };
+		1277FA512D1C124200B88E5F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1277FA502D1C124200B88E5F /* Kingfisher */; };
+		1277FA542D1C1A6100B88E5F /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 1277FA532D1C1A6100B88E5F /* SocketIO */; };
+		1277FA562D1C1DBA00B88E5F /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */; };
 		12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D52D0C1B2200783B62 /* AppDelegate.swift */; };
 		12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */; };
 		12BE19DA2D0C1B2200783B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D92D0C1B2200783B62 /* ViewController.swift */; };
@@ -36,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1277FA432D1C0EC700B88E5F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1277FA452D1C0F1D00B88E5F /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		1277FA4A2D1C118300B88E5F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		12BE19D22D0C1B2200783B62 /* bunker_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunker_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BE19D52D0C1B2200783B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1277FA512D1C124200B88E5F /* Kingfisher in Frameworks */,
+				1277FA4E2D1C123300B88E5F /* Alamofire in Frameworks */,
+				1277FA542D1C1A6100B88E5F /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1277FA3F2D1C0CA300B88E5F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12BE19D92D0C1B2200783B62 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1277FA402D1C0CB800B88E5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1277FA432D1C0EC700B88E5F /* Player.swift */,
+				1277FA452D1C0F1D00B88E5F /* Lobby.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1277FA412D1C0CC400B88E5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1277FA4A2D1C118300B88E5F /* APIService.swift */,
+				1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1277FA422D1C0D8900B88E5F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		12BE19C92D0C1B2200783B62 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +149,12 @@
 		12BE19D42D0C1B2200783B62 /* bunker_ios */ = {
 			isa = PBXGroup;
 			children = (
+				1277FA422D1C0D8900B88E5F /* Managers */,
+				1277FA412D1C0CC400B88E5F /* Services */,
+				1277FA402D1C0CB800B88E5F /* Models */,
+				1277FA3F2D1C0CA300B88E5F /* ViewControllers */,
 				12BE19D52D0C1B2200783B62 /* AppDelegate.swift */,
 				12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */,
-				12BE19D92D0C1B2200783B62 /* ViewController.swift */,
 				12BE19DB2D0C1B2200783B62 /* Main.storyboard */,
 				12BE19DE2D0C1B2300783B62 /* Assets.xcassets */,
 				12BE19E02D0C1B2300783B62 /* LaunchScreen.storyboard */,
@@ -143,6 +196,11 @@
 			dependencies = (
 			);
 			name = bunker_ios;
+			packageProductDependencies = (
+				1277FA4D2D1C123300B88E5F /* Alamofire */,
+				1277FA502D1C124200B88E5F /* Kingfisher */,
+				1277FA532D1C1A6100B88E5F /* SocketIO */,
+			);
 			productName = bunker_ios;
 			productReference = 12BE19D22D0C1B2200783B62 /* bunker_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +273,11 @@
 				Base,
 			);
 			mainGroup = 12BE19C92D0C1B2200783B62;
+			packageReferences = (
+				1277FA4C2D1C123300B88E5F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1277FA4F2D1C124200B88E5F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1277FA522D1C1A6100B88E5F /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = 12BE19D32D0C1B2200783B62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1277FA442D1C0EC700B88E5F /* Player.swift in Sources */,
+				1277FA562D1C1DBA00B88E5F /* WebSocketService.swift in Sources */,
+				1277FA4B2D1C118300B88E5F /* APIService.swift in Sources */,
+				1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */,
 				12BE19DA2D0C1B2200783B62 /* ViewController.swift in Sources */,
+				1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */,
 				12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */,
 				12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */,
 			);
@@ -607,6 +675,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1277FA4C2D1C123300B88E5F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		1277FA4F2D1C124200B88E5F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+		1277FA522D1C1A6100B88E5F /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1277FA4D2D1C123300B88E5F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1277FA4C2D1C123300B88E5F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1277FA502D1C124200B88E5F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1277FA4F2D1C124200B88E5F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		1277FA532D1C1A6100B88E5F /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1277FA522D1C1A6100B88E5F /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12BE19CA2D0C1B2200783B62 /* Project object */;
 }

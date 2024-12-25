@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  bunker_ios
-//
-//  Created by Alibek Baisholanov on 13.12.2024.
-//
+
 
 import UIKit
 
