@@ -3,7 +3,7 @@ import Foundation
 
 struct Lobby: Codable {
     let id: String
-    let lobbyCode: String
+    let lobbyId: String
 
     let players: [Player]
     let gameState: GameState

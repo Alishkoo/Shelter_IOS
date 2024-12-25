@@ -1,19 +1,21 @@
+
 import Foundation
 import SocketIO
 
-
-final class WebSocketService {
+final class WebSocketService2 {
     static let shared = WebSocketService()
     
     private var manager: SocketManager
     private var socket: SocketIOClient
     
+    
     private init() {
-        let url = URL(string: "http://YOUR_SERVER_URL")! // Замените на ваш сервер
+        let url = URL(string: "http://YOUR_SERVER_URL")!
         manager = SocketManager(socketURL: url, config: [.log(true), .compress])
         socket = manager.defaultSocket
     }
     
+    // MARK: - Подключение
     func connect() {
         socket.on(clientEvent: .connect) { data, ack in
             print("Socket connected")
@@ -23,6 +25,7 @@ final class WebSocketService {
             print("Socket disconnected")
         }
         
+        // Подключение с обработкой ошибок
         socket.on(clientEvent: .error) { data, ack in
             print("Socket error:", data)
         }
@@ -34,42 +37,52 @@ final class WebSocketService {
         socket.disconnect()
     }
     
-    // MARK: - Установка слушателей
+    // MARK: - Обработка событий
     func setupEventListeners() {
-        let events = [
-            "lobby-created",
-            "player-joined",
-            "game-started",
-            "card-opened",
-            "player-kicked",
-            "game-ended",
-            "round-updated",
-            "error"
-        ]
+        socket.on("lobby-created") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Lobby created:", response)
+            }
+        }
         
-        for event in events {
-            socket.on(event) { [weak self] data, ack in
-                guard let self = self else { return }
-                
-                // Публикуем событие в NotificationCenter
-                self.postNotification(for: event, with: data)
+        socket.on("player-joined") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Player joined:", response)
+            }
+        }
+        
+        socket.on("game-started") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Game started:", response)
+            }
+        }
+        
+        socket.on("card-opened") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Card opened:", response)
+            }
+        }
+        
+        socket.on("error") { data, ack in
+            if let errorMessage = data.first as? String {
+                print("Error received:", errorMessage)
+            }
+        }
+        
+        socket.on("player-kicked") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Player kicked:", response)
+            }
+        }
+        
+        socket.on("game-ended") { data, ack in
+            if let response = data.first as? [String: Any] {
+                print("Game ended:", response)
             }
         }
     }
     
-    // MARK: - Отправка уведомлений
-    private func postNotification(for event: String, with data: [Any]) {
-        // Подготавливаем информацию для уведомления
-        var userInfo: [String: Any] = [:]
-        if let firstData = data.first, let dictionary = firstData as? [String: Any] {
-            userInfo = dictionary
-        }
-        
-        // Отправляем уведомление
-        NotificationCenter.default.post(name: Notification.Name(event), object: nil, userInfo: userInfo)
-    }
-    
-    // MARK: - Эмит событий
+    // MARK: - Отправка событий
     func createLobby(playerId: String, lobbyId: String) {
         socket.emit("create-lobby", ["playerId": playerId, "lobbyId": lobbyId])
     }
@@ -98,3 +111,4 @@ final class WebSocketService {
         socket.emit("end-game", ["lobbyId": lobbyId])
     }
 }
+
