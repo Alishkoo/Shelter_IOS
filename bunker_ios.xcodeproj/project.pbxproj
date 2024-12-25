@@ -15,6 +15,8 @@
 		1277FA512D1C124200B88E5F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1277FA502D1C124200B88E5F /* Kingfisher */; };
 		1277FA542D1C1A6100B88E5F /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 1277FA532D1C1A6100B88E5F /* SocketIO */; };
 		1277FA562D1C1DBA00B88E5F /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */; };
+		1277FA582D1C35E900B88E5F /* WebSocketService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA572D1C35E900B88E5F /* WebSocketService2.swift */; };
+		1277FA5A2D1C418100B88E5F /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA592D1C418100B88E5F /* GameManager.swift */; };
 		12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D52D0C1B2200783B62 /* AppDelegate.swift */; };
 		12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */; };
 		12BE19DA2D0C1B2200783B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D92D0C1B2200783B62 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		1277FA4A2D1C118300B88E5F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		1277FA572D1C35E900B88E5F /* WebSocketService2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService2.swift; sourceTree = "<group>"; };
+		1277FA592D1C418100B88E5F /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		12BE19D22D0C1B2200783B62 /* bunker_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunker_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BE19D52D0C1B2200783B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				1277FA4A2D1C118300B88E5F /* APIService.swift */,
 				1277FA552D1C1DBA00B88E5F /* WebSocketService.swift */,
+				1277FA572D1C35E900B88E5F /* WebSocketService2.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */,
+				1277FA592D1C418100B88E5F /* GameManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1277FA442D1C0EC700B88E5F /* Player.swift in Sources */,
+				1277FA582D1C35E900B88E5F /* WebSocketService2.swift in Sources */,
 				1277FA562D1C1DBA00B88E5F /* WebSocketService.swift in Sources */,
 				1277FA4B2D1C118300B88E5F /* APIService.swift in Sources */,
 				1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */,
@@ -329,6 +336,7 @@
 				1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */,
 				12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */,
 				12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */,
+				1277FA5A2D1C418100B88E5F /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
