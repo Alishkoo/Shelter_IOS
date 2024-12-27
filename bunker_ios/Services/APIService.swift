@@ -6,7 +6,7 @@ import Alamofire
 class PlayerAPIManager {
     static let shared = PlayerAPIManager()
     
-    private let baseUrl = "172.20.10.2:3000"
+    private let baseUrl = "http://172.20.10.2:3000"
 
     
     func createPlayer(withName name: String, completion: @escaping (Result<Player, Error>) -> Void) {

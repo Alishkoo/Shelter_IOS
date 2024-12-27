@@ -9,7 +9,7 @@ final class WebSocketService {
     private var socket: SocketIOClient
     
     private init() {
-        let url = URL(string: "172.20.10.2:3000")! // Замените на ваш сервер
+        let url = URL(string: "http://172.20.10.2:3000")! // Замените на ваш сервер
         manager = SocketManager(socketURL: url, config: [.compress])
         socket = manager.defaultSocket
     }
