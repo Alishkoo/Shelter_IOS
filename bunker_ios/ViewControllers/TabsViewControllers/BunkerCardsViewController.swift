@@ -5,8 +5,17 @@ import UIKit
 
 class BunkerCardsViewController: UIViewController {
 
-    var lobby: Lobby?
-    var players: [PlayerWithCard]?
+    var gameData: GameStartedData? {
+        didSet {
+            guard let gameData = gameData else {
+                print("gameData is nil")
+                return
+            }
+
+            print(gameData)
+            
+        }
+    }
     
     private let scrollView = UIScrollView()
     private let imageView1 = UIImageView()
@@ -17,7 +26,7 @@ class BunkerCardsViewController: UIViewController {
         setupView()
 
         imageView1.image = UIImage(named: "ВИДЕО СО СПУТНИКА")
-        imageView2.image = UIImage(named: "ВИДЕО СО СПУТНИКА")
+        imageView2.image = UIImage(named: "ВОССТАНИЕ РОБОТОВ")
     }
 
     private func setupView() {
