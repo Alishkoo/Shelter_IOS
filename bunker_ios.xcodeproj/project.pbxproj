@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120E67592D1E803A002F1A20 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */; };
 		1277FA442D1C0EC700B88E5F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA432D1C0EC700B88E5F /* Player.swift */; };
 		1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA452D1C0F1D00B88E5F /* Lobby.swift */; };
 		1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */; };
@@ -19,13 +20,22 @@
 		1277FA5A2D1C418100B88E5F /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA592D1C418100B88E5F /* GameManager.swift */; };
 		12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D52D0C1B2200783B62 /* AppDelegate.swift */; };
 		12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */; };
-		12BE19DA2D0C1B2200783B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D92D0C1B2200783B62 /* ViewController.swift */; };
+		12BE19DA2D0C1B2200783B62 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19D92D0C1B2200783B62 /* StartViewController.swift */; };
 		12BE19DD2D0C1B2200783B62 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 12BE19DC2D0C1B2200783B62 /* Base */; };
 		12BE19DF2D0C1B2300783B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BE19DE2D0C1B2300783B62 /* Assets.xcassets */; };
 		12BE19E22D0C1B2300783B62 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 12BE19E12D0C1B2300783B62 /* Base */; };
 		12BE19ED2D0C1B2300783B62 /* bunker_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19EC2D0C1B2300783B62 /* bunker_iosTests.swift */; };
 		12BE19F72D0C1B2300783B62 /* bunker_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19F62D0C1B2300783B62 /* bunker_iosUITests.swift */; };
 		12BE19F92D0C1B2300783B62 /* bunker_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE19F82D0C1B2300783B62 /* bunker_iosUITestsLaunchTests.swift */; };
+		12D52CB72D1D5F8000B5134A /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CB62D1D5F8000B5134A /* LobbyViewController.swift */; };
+		12D52CB92D1D605600B5134A /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CB82D1D605600B5134A /* CreateGameViewController.swift */; };
+		12D52CBB2D1D606800B5134A /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CBA2D1D606800B5134A /* JoinGameViewController.swift */; };
+		12D52CBD2D1D65BC00B5134A /* SpinnerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CBC2D1D65BC00B5134A /* SpinnerManager.swift */; };
+		12D52CBF2D1D9FB600B5134A /* WaitingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CBE2D1D9FB600B5134A /* WaitingRoomViewController.swift */; };
+		12D52CC12D1DDE7800B5134A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CC02D1DDE7800B5134A /* TabBarViewController.swift */; };
+		12D52CC32D1DDFBF00B5134A /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CC22D1DDFBF00B5134A /* CardsViewController.swift */; };
+		12D52CC52D1DDFEA00B5134A /* BunkerCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CC42D1DDFEA00B5134A /* BunkerCardsViewController.swift */; };
+		12D52CC72D1DE00200B5134A /* OtherPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D52CC62D1DE00200B5134A /* OtherPlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		1277FA432D1C0EC700B88E5F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1277FA452D1C0F1D00B88E5F /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
 		1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
@@ -56,7 +67,7 @@
 		12BE19D22D0C1B2200783B62 /* bunker_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunker_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BE19D52D0C1B2200783B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12BE19D72D0C1B2200783B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12BE19D92D0C1B2200783B62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12BE19D92D0C1B2200783B62 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		12BE19DC2D0C1B2200783B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12BE19DE2D0C1B2300783B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12BE19E12D0C1B2300783B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +77,15 @@
 		12BE19F22D0C1B2300783B62 /* bunker_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bunker_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BE19F62D0C1B2300783B62 /* bunker_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bunker_iosUITests.swift; sourceTree = "<group>"; };
 		12BE19F82D0C1B2300783B62 /* bunker_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bunker_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12D52CB62D1D5F8000B5134A /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		12D52CB82D1D605600B5134A /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		12D52CBA2D1D606800B5134A /* JoinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
+		12D52CBC2D1D65BC00B5134A /* SpinnerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerManager.swift; sourceTree = "<group>"; };
+		12D52CBE2D1D9FB600B5134A /* WaitingRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomViewController.swift; sourceTree = "<group>"; };
+		12D52CC02D1DDE7800B5134A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		12D52CC22D1DDFBF00B5134A /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		12D52CC42D1DDFEA00B5134A /* BunkerCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BunkerCardsViewController.swift; sourceTree = "<group>"; };
+		12D52CC62D1DE00200B5134A /* OtherPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +119,12 @@
 		1277FA3F2D1C0CA300B88E5F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				12BE19D92D0C1B2200783B62 /* ViewController.swift */,
+				12BE19D92D0C1B2200783B62 /* StartViewController.swift */,
+				12D52CB62D1D5F8000B5134A /* LobbyViewController.swift */,
+				12D52CB82D1D605600B5134A /* CreateGameViewController.swift */,
+				12D52CBA2D1D606800B5134A /* JoinGameViewController.swift */,
+				12D52CBE2D1D9FB600B5134A /* WaitingRoomViewController.swift */,
+				12D52CC82D1DE00C00B5134A /* TabsViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +153,7 @@
 			children = (
 				1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */,
 				1277FA592D1C418100B88E5F /* GameManager.swift */,
+				12D52CBC2D1D65BC00B5134A /* SpinnerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -184,6 +210,18 @@
 				12BE19F82D0C1B2300783B62 /* bunker_iosUITestsLaunchTests.swift */,
 			);
 			path = bunker_iosUITests;
+			sourceTree = "<group>";
+		};
+		12D52CC82D1DE00C00B5134A /* TabsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12D52CC02D1DDE7800B5134A /* TabBarViewController.swift */,
+				12D52CC22D1DDFBF00B5134A /* CardsViewController.swift */,
+				120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */,
+				12D52CC42D1DDFEA00B5134A /* BunkerCardsViewController.swift */,
+				12D52CC62D1DE00200B5134A /* OtherPlayersViewController.swift */,
+			);
+			path = TabsViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,15 +365,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D52CC12D1DDE7800B5134A /* TabBarViewController.swift in Sources */,
+				12D52CC52D1DDFEA00B5134A /* BunkerCardsViewController.swift in Sources */,
 				1277FA442D1C0EC700B88E5F /* Player.swift in Sources */,
 				1277FA582D1C35E900B88E5F /* WebSocketService2.swift in Sources */,
 				1277FA562D1C1DBA00B88E5F /* WebSocketService.swift in Sources */,
 				1277FA4B2D1C118300B88E5F /* APIService.swift in Sources */,
 				1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */,
-				12BE19DA2D0C1B2200783B62 /* ViewController.swift in Sources */,
+				12BE19DA2D0C1B2200783B62 /* StartViewController.swift in Sources */,
+				12D52CC32D1DDFBF00B5134A /* CardsViewController.swift in Sources */,
+				12D52CB92D1D605600B5134A /* CreateGameViewController.swift in Sources */,
+				12D52CC72D1DE00200B5134A /* OtherPlayersViewController.swift in Sources */,
+				120E67592D1E803A002F1A20 /* CardsTableViewCell.swift in Sources */,
+				12D52CBB2D1D606800B5134A /* JoinGameViewController.swift in Sources */,
 				1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */,
+				12D52CBD2D1D65BC00B5134A /* SpinnerManager.swift in Sources */,
+				12D52CB72D1D5F8000B5134A /* LobbyViewController.swift in Sources */,
 				12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */,
 				12BE19D82D0C1B2200783B62 /* SceneDelegate.swift in Sources */,
+				12D52CBF2D1D9FB600B5134A /* WaitingRoomViewController.swift in Sources */,
 				1277FA5A2D1C418100B88E5F /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,7 +571,6 @@
 				INFOPLIST_FILE = bunker_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -551,7 +598,6 @@
 				INFOPLIST_FILE = bunker_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

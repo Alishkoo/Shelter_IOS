@@ -3,7 +3,7 @@ import Foundation
 import SocketIO
 
 final class WebSocketService2 {
-    static let shared = WebSocketService()
+    static let shared = WebSocketService2()
     
     private var manager: SocketManager
     private var socket: SocketIOClient

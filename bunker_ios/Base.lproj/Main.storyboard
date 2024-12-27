@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYN-gu-SRL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYN-gu-SRL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,7 +111,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="aNq-LR-RLt" kind="replace" splitViewControllerTargetIndex="1" id="NC6-Ra-G0k"/>
+                                    <segue destination="aNq-LR-RLt" kind="push" identifier="endTheGame" splitViewControllerTargetIndex="1" id="NC6-Ra-G0k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,7 +212,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uNe-m6-oPw">
-                                                            <rect key="frame" x="96" y="9" width="200" height="110"/>
+                                                            <rect key="frame" x="96" y="8" width="200" height="110"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </stackView>
                                                     </subviews>
@@ -330,7 +330,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="XdT-Ba-bIh" kind="show" id="daR-gH-4cC"/>
+                                    <segue destination="XdT-Ba-bIh" kind="show" identifier="waitin" id="daR-gH-4cC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -434,7 +434,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="PCs-JX-0zh" kind="show" id="YYa-4K-ziL"/>
+                                    <segue destination="PCs-JX-0zh" kind="show" identifier="createGame" id="YYa-4K-ziL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcF-bL-p1V">
@@ -453,7 +453,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="CoB-W0-MZ1" kind="show" id="A2Y-Eo-n5X"/>
+                                    <segue destination="CoB-W0-MZ1" kind="show" identifier="enterGame" id="A2Y-Eo-n5X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -510,12 +510,17 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="jPA-48-Ckr" kind="replace" splitViewControllerTargetIndex="1" id="pAq-7v-Bi2"/>
+                                    <action selector="submitButtonTapped:" destination="bKF-WO-1hT" eventType="touchUpInside" id="p8y-9q-mnF"/>
+                                    <segue destination="jPA-48-Ckr" kind="show" identifier="toLobby" id="dOK-uT-F5E"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iTw-eZ-fvn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="nameTextField" destination="Tzu-9g-N81" id="i6K-Jo-TtA"/>
+                            <outlet property="submitButton" destination="F43-Ad-I5f" id="b4U-4e-rxv"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKF-WO-1hT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -558,7 +563,7 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="tYN-gu-SRL" kind="show" id="oTy-NW-5IE"/>
+                                    <segue destination="tYN-gu-SRL" kind="show" identifier="tabBar" id="oTy-NW-5IE"/>
                                 </connections>
                             </button>
                         </subviews>
