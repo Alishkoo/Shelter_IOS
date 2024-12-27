@@ -45,9 +45,9 @@ class TabBarViewController: UITabBarController {
                 if let cardsVC = viewController as? CardsViewController {
                     cardsVC.gameData = gameData
                 } else if let bunkerVC = viewController as? BunkerCardsViewController {
-            
+                    bunkerVC.gameData = gameData
                 } else if let otherPlayersVC = viewController as? OtherPlayersViewController {
-                    
+                    otherPlayersVC.gameData = gameData
                 }
             }
     }

@@ -2,10 +2,9 @@
 import UIKit
 
 class WaitingRoomViewController: UIViewController {
-    // Заголовок (например, для отображения текущего состояния лобби)
     private let lobbyInfoLabel: UILabel = {
         let label = UILabel()
-        label.text = "Waiting for players..." // Текст по умолчанию
+        label.text = "Waiting for players..." // заглушка
         label.font = UIFont(name: "Copperplate", size: 24.0)
         label.textColor = .black
         label.textAlignment = .center
@@ -14,7 +13,6 @@ class WaitingRoomViewController: UIViewController {
         return label
     }()
     
-    // Кнопка "Start the Game"
     private let startGameButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Start the Game", for: .normal)
@@ -28,7 +26,6 @@ class WaitingRoomViewController: UIViewController {
         return button
     }()
     
-    // Lobby ID
     var lobbyId: String? {
         didSet {
             updateLobbyInfo()
@@ -47,19 +44,16 @@ class WaitingRoomViewController: UIViewController {
         view.addSubview(startGameButton)
         
         NSLayoutConstraint.activate([
-            // Лейбл с информацией о лобби
             lobbyInfoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             lobbyInfoLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
             lobbyInfoLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
             
-            // Кнопка "Start the Game"
             startGameButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             startGameButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
             startGameButton.widthAnchor.constraint(equalToConstant: 200),
             startGameButton.heightAnchor.constraint(equalToConstant: 44)
         ])
         
-        // Добавляем действие на кнопку
         startGameButton.addTarget(self, action: #selector(startGameTapped), for: .touchUpInside)
     }
     
@@ -83,7 +77,7 @@ class WaitingRoomViewController: UIViewController {
             return
         }
         
-        // Отправляем событие "start-game" через WebSocketService
+        // "start-game"
         WebSocketService.shared.startGame(lobbyId: lobbyId)
         SpinnerManager.shared.showSpinner(on: view)
     }
@@ -129,9 +123,7 @@ class WaitingRoomViewController: UIViewController {
             let jsonData = try JSONSerialization.data(withJSONObject: userInfo, options: [])
             let gameStartedData = try JSONDecoder().decode(GameStartedData.self, from: jsonData)
             
-            // Успешный парсинг
             let gameData = gameStartedData
-//            print(lobby)
             
             // Переход к следующему экрану
             let tabBarViewController = TabBarViewController()

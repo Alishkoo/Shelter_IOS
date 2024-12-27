@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		120E67592D1E803A002F1A20 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */; };
+		120E675B2D1EBA24002F1A20 /* OtherPLayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120E675A2D1EBA24002F1A20 /* OtherPLayerCell.swift */; };
 		1277FA442D1C0EC700B88E5F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA432D1C0EC700B88E5F /* Player.swift */; };
 		1277FA462D1C0F1D00B88E5F /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA452D1C0F1D00B88E5F /* Lobby.swift */; };
 		1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
+		120E675A2D1EBA24002F1A20 /* OtherPLayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPLayerCell.swift; sourceTree = "<group>"; };
 		1277FA432D1C0EC700B88E5F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1277FA452D1C0F1D00B88E5F /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
 		1277FA472D1C10B500B88E5F /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				120E67582D1E803A002F1A20 /* CardsTableViewCell.swift */,
 				12D52CC42D1DDFEA00B5134A /* BunkerCardsViewController.swift */,
 				12D52CC62D1DE00200B5134A /* OtherPlayersViewController.swift */,
+				120E675A2D1EBA24002F1A20 /* OtherPLayerCell.swift */,
 			);
 			path = TabsViewControllers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				120E67592D1E803A002F1A20 /* CardsTableViewCell.swift in Sources */,
 				12D52CBB2D1D606800B5134A /* JoinGameViewController.swift in Sources */,
 				1277FA482D1C10B500B88E5F /* LocalStorageManager.swift in Sources */,
+				120E675B2D1EBA24002F1A20 /* OtherPLayerCell.swift in Sources */,
 				12D52CBD2D1D65BC00B5134A /* SpinnerManager.swift in Sources */,
 				12D52CB72D1D5F8000B5134A /* LobbyViewController.swift in Sources */,
 				12BE19D62D0C1B2200783B62 /* AppDelegate.swift in Sources */,
