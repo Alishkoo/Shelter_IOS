@@ -3,7 +3,6 @@
 import UIKit
 
 class JoinGameViewController: UIViewController {
-    // Заголовок
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Enter your game code"
@@ -14,7 +13,6 @@ class JoinGameViewController: UIViewController {
         return label
     }()
     
-    // Поле для ввода кода
     private let gameCodeTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Game code"
@@ -28,7 +26,6 @@ class JoinGameViewController: UIViewController {
         return textField
     }()
     
-    // Кнопка Submit
     private let submitButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Submit", for: .normal)
@@ -55,17 +52,14 @@ class JoinGameViewController: UIViewController {
         view.addSubview(submitButton)
         
         NSLayoutConstraint.activate([
-            // Заголовок
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
             
-            // Поле для ввода кода
             gameCodeTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             gameCodeTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
             gameCodeTextField.widthAnchor.constraint(equalToConstant: 250),
             gameCodeTextField.heightAnchor.constraint(equalToConstant: 40),
             
-            // Кнопка Submit
             submitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             submitButton.topAnchor.constraint(equalTo: gameCodeTextField.bottomAnchor, constant: 30),
             submitButton.widthAnchor.constraint(equalToConstant: 150),
@@ -74,7 +68,7 @@ class JoinGameViewController: UIViewController {
         
         submitButton.addTarget(self, action: #selector(submitButtonTapped), for: .touchUpInside)
     }
-    
+    // нажатие кнопки захода в лобби
     @objc private func submitButtonTapped() {
         guard let lobbyId = gameCodeTextField.text, !lobbyId.isEmpty else {
                 showAlert(message: "Please enter a valid game code.")
@@ -86,7 +80,7 @@ class JoinGameViewController: UIViewController {
                 return
         }
                 
-        // Отправляем событие "join-lobby" на сервер
+        // Отправление "join-lobby" на сервер
         WebSocketService.shared.joinLobby(playerId: playerId, lobbyId: lobbyId)
         SpinnerManager.shared.showSpinner(on: view)
     }
@@ -107,9 +101,6 @@ class JoinGameViewController: UIViewController {
             showAlert(message: "Failed to retrieve lobby information.")
             return
         }
-        
-        // Логируем сырые данные userInfo
-//        print("Raw userInfo: \(userInfo)")
         
         do {
             // Преобразуем `userInfo` в Data для парсинга
