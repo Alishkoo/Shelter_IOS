@@ -145,8 +145,9 @@ class CardsViewController: UIViewController, UIScrollViewDelegate {
             if let card = card, let url = URL(string: card.imageUrl) {
                 cardImageView.kf.setImage(with: url)
             } else {
-                cardImageView.image = UIImage(named: "placeholder") // Если карты нет, используем заглушку
+                cardImageView.image = UIImage(named: "Bunker backcard") // Если карты нет, используем заглушку
             }
+
 
             stackView.addArrangedSubview(cardImageView)
 
